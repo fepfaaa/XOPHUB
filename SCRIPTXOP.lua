@@ -2,6 +2,42 @@
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/xSaigez/MIDNIGHT/main/MIDNIGHT"))()
 -------------------------BF-------------------------
 
+_G.Key = 'MAI-CHI-MANUD',
+
+_G.Key = 'I-SUS-KEN'
+
+VPSIP = "127.0.0.1"
+
+function script()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/fepfaaa/XOPHUB/main/SCRIPTXOP.lua"))();
+end
+
+
+
+
+
+local server = syn.request({
+    Url = "http://127.0.0.1/server.php?key=".._G.Key,
+    Method = "GET"
+})
+
+local decode = syn_crypt_b64_decode(server.Body)
+
+if decode == "" then
+    print("Invaild Key")
+elseif decode == "Invalid Key" then
+      print("Invaild Key") 
+elseif decode == "Update Hwid" then
+    print("Update Hwid")
+elseif decode == "Invalid HWID" then
+    print("Invalid HWID")
+elseif decode == "You Are Got Blacklist" then
+   print("You Are Got Blacklist")
+elseif decode == "Whitelist" then
+    script()
+end
+
+
 if game.PlaceId == 2753915549 or game.PlaceId == 4442272183 or game.PlaceId == 7449423635 then
 	do  local ui =  game:GetService("CoreGui"):FindFirstChild("redui")  if ui then ui:Destroy() end end
 
