@@ -2,9 +2,7 @@
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/xSaigez/MIDNIGHT/main/MIDNIGHT"))()
 -------------------------BF-------------------------
 
-_G.Key = 'MAI-CHI-MANUD',
-
-_G.Key = 'I-SUS-KEN'
+_G.Key = 'MAI-CHI-MANUD'
 
 VPSIP = "127.0.0.1"
 
